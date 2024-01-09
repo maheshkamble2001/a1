@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+div.background-image{
+    display: block;
+    position: relative;
+}
+div.background-image img{
+    width:100%;
+    height:520px;
+    margin: 0;
+    padding: 0;
+}
+div.search{
+    display: flex;
+    width:100%;
+    position:absolute;
+    justify-content: center;
+    top:30%;
+}
+div.search input , div.search select{
+    font-size:22px;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    margin:5px;
+}
+/*items css*/
+div.item-list{
+    margin: 0;
+    width: 100%;
+    padding:100px 0;
+    background: #dddddd;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.item-list div.item{
+    display: flex;
+    width:47%;
+    height:300px;
+    background-color: white;
+    margin:22px;
+    border-radius: 30px;
+}
+ 
+div.item div.item-img{
+    width:45%;
+    height: 100%;
+    border-right: 5px solid #ddd;
+}
+div.item div.item-img img{
+    width:85%;
+    height:85%;
+    margin: 24px;
+    border-radius:20px;
+}
+div.item div.item-info{
+    width:58%;
+    height:100%;
+}
+div.item div.item-info h3{
+    font-size: 30px;
+    margin:15px;
+    text-align: center;
+    color:black;
+}
+div.item div.item-info p{
+    font-size:18px;
+    color:black;
+    text-align: center;
+    margin:20px;
+    height:100px;
+}
+div.item div.item-info input{
+    text-align: center;
+    padding:10px;
+    margin: 1% 12%;
+    font-size: 18px;
+    width:80%;
+    color:white;
+    background-color: #ddd;
+    border:none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:700px){
+    *{
+        width: 100%;
+    }
+    div.background-image{
+        background-color: violet;
+        height: 200px;
+    }
+    div.background-image img{
+        display: none;
+    }
+    div.search{
+        position: absolute;
+        top:10px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div.search input , div.search select{
+        width: 85%;
+        display:block;
+    }
+
+    div.item-list{
+        padding:0;
+        width:100%;
+    }
+    div.item-list div.item{
+        width:100%;
+        margin: 0;
+        border-radius:0;
+        display: flex;
+        flex-direction: column;
+        height:800px;
+        background: black;
+    }
+    div.item div.item-info{
+        display: block;
+        height: 400px;
+        width: 100%;
+    }
+    div.item div.item-info h3,div.item div.item-info p{
+        color:white;
+    }
+    div.item div.item-img{
+        display: block;
+        height: 400px;
+        border:none;
+        width:100%;
+    }
+    
+    div.item div.item-img img{
+        border-radius: 0;
+        margin: 5px;
+        width: 98%;
+    }
+
+}
